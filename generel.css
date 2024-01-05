@@ -223,6 +223,7 @@ h1 {
   text-align: center;
   padding-bottom: 40px;
   padding-top: 25px;
+  box-shadow: 9px 8px 17px 0px rgba(0, 0, 0, 0.75);
 }
 
 .smillacv {
@@ -275,10 +276,26 @@ h1 {
 .tema5pic {
   margin: 0 auto;
   border-radius: 4%;
+  box-shadow: 9px 8px 17px 0px rgba(0, 0, 0, 0.75);
+  height: 90%;
 }
 
 .temabilleder {
   display: grid;
+  padding-bottom: 15rem;
+  padding-top: 5rem;
+  gap: 2%;
+}
+.temabilleder2 {
+  display: grid;
+  padding-bottom: 12rem;
+  padding-top: 5rem;
+  gap: 2%;
+}
+
+.temafinal {
+  padding-bottom: 10rem;
+  padding-top: 5rem;
 }
 
 footer {
@@ -369,6 +386,7 @@ footer {
   .grid_om_mig {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 10rem;
   }
 
   .grid_cv {
@@ -424,7 +442,7 @@ footer {
 
   .cv {
     text-align: center;
-    padding-top: 15%;
+    padding-top: 5%;
   }
 
   .billedesmilla {
@@ -502,15 +520,11 @@ footer {
 
   .temabilleder {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .temabilleder {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
     padding: 5rem;
+    padding-bottom: 15rem;
   }
 
   .textvisit {
@@ -544,6 +558,8 @@ footer {
     grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
     padding: 5rem;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
   }
 
   .boksediv {
@@ -603,8 +619,8 @@ footer {
     grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
     padding: 5rem;
-    background-color: #a3b18a;
     margin: none;
+    padding-top: 10rem;
   }
 
   .tematekst1 {
@@ -619,5 +635,50 @@ footer {
 
   .temafinal {
     padding: 10rem;
+  }
+
+  .videosite {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10%;
+    gap: 5%;
+  }
+
+  .videoer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 200px;
+    gap: 3rem;
+  }
+
+  .martin1 {
+    border-radius: 10%;
+    box-shadow: 9px 8px 17px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  .video2 {
+    background-image: url(imgs/blur.webp);
+    width: 100%;
+    padding: 100px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 15%;
+    height: 80%;
+    box-shadow: 9px 8px 17px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  .videoview {
+    background-image: url(imgs/blur22.webp);
+    width: 100%;
+    padding: 100px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 15%;
+    height: 80%;
+    box-shadow: 9px 8px 17px 0px rgba(0, 0, 0, 0.75);
+  }
+  .streg {
+    width: 50%;
+    margin: 0 auto;
   }
 }
