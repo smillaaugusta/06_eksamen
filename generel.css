@@ -82,7 +82,8 @@ h3 {
 }
 
 .logo {
-  padding-top: 20px;
+  width: 40%;
+  padding-left: 10px;
 }
 
 .logoer {
@@ -298,6 +299,7 @@ h1 {
   margin: 0 auto;
   border-radius: 5%;
   box-shadow: 9px 8px 17px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 10px;
 }
 
 .tema3pic1 {
@@ -492,6 +494,11 @@ footer {
     list-style: none;
     padding-right: 60px;
     text-transform: uppercase;
+  }
+
+  .logo {
+    width: 29%;
+    padding-left: 10px;
   }
 
   .mig_1 {
@@ -701,6 +708,12 @@ footer {
   .akti {
     grid-column: 2/3;
     grid-row: 1/2;
+    line-height: 3rem;
+  }
+
+  .script {
+    grid-column: 2/3;
+    grid-row: 2/3;
     line-height: 3rem;
   }
 

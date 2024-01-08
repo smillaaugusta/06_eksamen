@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.32 73.98">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-2 {
+        fill: #231f20;
+        font-family: BrushScriptMT, 'Brush Script MT';
+        font-size: 45.09px;
+      }
+
+      .cls-3 {
+        fill: #a4b28b;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <circle class="cls-3" cx="36.99" cy="36.99" r="36.99"/>
+  <text class="cls-2" transform="translate(16.81 36.99) scale(1.63 1)"><tspan x="0" y="0">S</tspan><tspan class="cls-1" x="0" y="21"> </tspan><tspan x="11.49" y="21">A</tspan></text>
+</svg>
