@@ -20,11 +20,20 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
+    <header id="active-menu">
+        <div class="inner-header">
             <a class="logo" href="index.html">
                 <img class="logo" src="imgs/weblogo.svg" alt="logo">
             </a>
+            <div class="burger-menu">
+                <div class="menu-icon" id="menu-icon">
+                    <div class="bar bar-1"></div>
+                    <div class="bar bar-2"></div>
+                    <div class="bar bar-3"></div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar active-show">
             <ul class="menu">
                 <li><a href="index.html">Forside</a></li>
                 <li><a href="om_mig.html">Om mig</a></li>
@@ -93,10 +102,10 @@
 
         <h2 class="process">Processen for 03.03.01 Kodet site</h2>
 
-        <div class="temabilleder3">
+        <div class="temabilleder">
 
 
-            <div class="tematre">
+            <div class="textvisit">
                 <h3>Research, moodboard, style tile og Storyboard</h3>
                 <p>Jeg researchede andre kultur websites, som omhandlede samme emne. Jeg valgte at lave en hjemmeside
                     til studerende, og hvordan man stadig kan have et liv og hygge sig med sine venner, selvom
@@ -117,21 +126,21 @@
                     beskrev, hvordan jeg ønskede, at min målgruppe skulle opfatte hjemmesiden.
                 </p>
             </div>
-            <div class="temamood">
+            <div class="visitdiv">
                 <h4>Moodboard</h4>
                 <img class="tema3pic1" src="imgs/moodboard.webp" alt="Moodboard">
             </div>
-            <div class="temastory">
+            <div class="dyrdiv">
                 <h4>Storyboard</h4>
                 <img class="tema3pic1" src="imgs/storyboard.webp" alt="Storyboard">
             </div>
 
-            <div class="temastyle">
+            <div class="kodediv">
                 <h4>Style Tile</h4>
                 <img class="tema3pic1" src="imgs/styletile.webp" alt="Style Tile">
             </div>
 
-            <div class="temaresearch">
+            <div class="visitwebdiv">
                 <h4>Desk Research</h4>
                 <img class="tema3pic1" src="imgs/research.webp" alt="Desk Research">
             </div>
@@ -213,7 +222,7 @@
                 </p>
             </div>
 
-            <div>
+            <div class="gestaltlove">
                 <img class="tema3pic" src="imgs/ttest.webp" alt="Billede af perosner der laver tænkehøjt test">
             </div>
         </div>
@@ -222,13 +231,13 @@
 
         <div class="pitch">
             <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:fe7b7671-4e88-4130-ab71-34b60ebc7fd6">
-                <h2>Klik for at se pitchen</h2>
+                <h2 class="h2mobil">Klik for at se pitchen</h2>
             </a>
         </div>
 
         <div class="temafinal">
             <a href="https://smillaaugusta.dk/kea/03_ux/01_kodet_site/index.html">
-                <h2>Klik for at se endelige resultat</h2>
+                <h2 class="h2mobil">Klik for at se endelige resultat</h2>
                 <img class="tema3pic" src="imgs/03.webp" alt="Endelig resultat">
             </a>
         </div>
@@ -237,7 +246,7 @@
 
     <footer class="footer_grid">
         <div class="footer_grid_1">
-            <p>© 2023 Smilla A. P. J. Bredgaard. All Rights Reserved.</p>
+            <p>© 2024 Smilla A. P. J. Bredgaard. All Rights Reserved.</p>
         </div>
 
         <div class="footer_grid_2">
@@ -258,6 +267,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 

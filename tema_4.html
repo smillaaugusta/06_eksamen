@@ -20,11 +20,20 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
+    <header id="active-menu">
+        <div class="inner-header">
             <a class="logo" href="index.html">
                 <img class="logo" src="imgs/weblogo.svg" alt="logo">
             </a>
+            <div class="burger-menu">
+                <div class="menu-icon" id="menu-icon">
+                    <div class="bar bar-1"></div>
+                    <div class="bar bar-2"></div>
+                    <div class="bar bar-3"></div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar active-show">
             <ul class="menu">
                 <li><a href="index.html">Forside</a></li>
                 <li><a href="om_mig.html">Om mig</a></li>
@@ -200,7 +209,7 @@
                     ved hjælp af css. Ved "fck_container.addEventListener("click", clickFck);" og
                     "bif_container.addEventListener("click", clickBif);", kan man se at der bliver
                     tilføjet en eventlistener, så når der bliver klikket på den, udføres funktionen "clickfck", som
-                    defineres længere nede i min JavaScript for spillet. Det næste der sker ved
+                    defineres på andet billede til højre. Det næste der sker ved
                     "fck_container.addEventListener("animationiteration", genstartFck);" og
                     "bif_container.addEventListener("animationiteration", genstartBif);" er at der kommer en
                     eventlistener der lytter efter afslutningen af animationiteration, og når den gentages bliver den
@@ -250,7 +259,7 @@
 
         <div class="temafinal">
             <a href="https://smillaaugusta.dk/kea/04_animation/website/spil.html">
-                <h2>Klik for at se mit Spil og hjemmesiden dertil</h2>
+                <h2 class="h2mobil">Klik for at se mit Spil og hjemmesiden dertil</h2>
                 <img class="tema4pic" src="imgs/spil.webp" alt="Spil">
             </a>
         </div>
@@ -261,7 +270,7 @@
 
     <footer class="footer_grid">
         <div class="footer_grid_1">
-            <p>© 2023 Smilla A. P. J. Bredgaard. All Rights Reserved.</p>
+            <p>© 2024 Smilla A. P. J. Bredgaard. All Rights Reserved.</p>
         </div>
 
         <div class="footer_grid_2">
@@ -282,6 +291,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 
 
 </body>

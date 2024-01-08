@@ -20,15 +20,23 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
+    <header id="active-menu">
+        <div class="inner-header">
             <a class="logo" href="index.html">
                 <img class="logo" src="imgs/weblogo.svg" alt="logo">
             </a>
-
+            <div class="burger-menu">
+                <div class="menu-icon" id="menu-icon">
+                    <div class="bar bar-1"></div>
+                    <div class="bar bar-2"></div>
+                    <div class="bar bar-3"></div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar active-show">
             <ul class="menu">
                 <li><a href="index.html">Forside</a></li>
-                <li><a href="om_mig.html">Om Mig</a></li>
+                <li><a href="om_mig.html">Om mig</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
             </ul>
         </nav>
@@ -84,7 +92,7 @@
 
     <footer class="footer_grid">
         <div class="footer_grid_1">
-            <p>© 2023 Smilla A. P. J. Bredgaard. All Rights Reserved.</p>
+            <p>© 2024 Smilla A. P. J. Bredgaard. All Rights Reserved.</p>
         </div>
 
         <div class="footer_grid_2">
@@ -106,6 +114,7 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 
 
 </body>

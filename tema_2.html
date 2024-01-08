@@ -20,12 +20,20 @@
 </head>
 
 <body>
-
-    <header>
-        <nav class="navbar">
+    <header id="active-menu">
+        <div class="inner-header">
             <a class="logo" href="index.html">
                 <img class="logo" src="imgs/weblogo.svg" alt="logo">
             </a>
+            <div class="burger-menu">
+                <div class="menu-icon" id="menu-icon">
+                    <div class="bar bar-1"></div>
+                    <div class="bar bar-2"></div>
+                    <div class="bar bar-3"></div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar active-show">
             <ul class="menu">
                 <li><a href="index.html">Forside</a></li>
                 <li><a href="om_mig.html">Om mig</a></li>
@@ -165,7 +173,7 @@
         <div class="htmldiv">
 
 
-            <div>
+            <div class="gestaltlove">
                 <h4>Gestalt lovene</h4>
                 <img class="tema3pic" src="imgs/gestalt.webp" alt="Billede af Gestalt Love" width="200" height="100">
             </div>
@@ -174,23 +182,30 @@
             <div>
                 <h3>Gestalt lovene</h3>
                 <p>Jeg fik en forståelse for gestalt lovene, som i vores sammenhæng bruges i design og
-                    brugergrænsefladedesign. Disse fem mest anvendte love inkluderer følgende:</p>
+                    brugergrænsefladedesign. Disse principper vi lærte om inkluderer følgende:</p>
                 <ul>
-                    <li><span class="markeret-ord"><span class="markeret-ord">Lukning</span></span> - Det refererer til
-                        den tendens mennesker har til at gruppere ting sammen der har samme
-                        farve, form eller størrelse.</li>
+                    <li><span class="markeret-ord"><span class="markeret-ord">Enkelhed</span></span> - Det refererer
+                        til vi menneskers tendens til at organisere komplekse former eller billeder til mere enkle
+                        strukturer. Vi opfatter og husker former i deres mest enkle form, uanset farve, form eller
+                        størrelse.</li>
+                    <li><span class="markeret-ord">Figur og baggrund</span> - Handler om at vi har en tendens til at
+                        skelne mellem en figur og en baggrund, så vi kan se at det mest centralt er figuren.</li>
                     <li><span class="markeret-ord">Nærhed</span> - Som er ting der er ligger tæt sammen ofte opfattes
                         som en gruppe, og egentlig det samme
                         for ting der ligger langt fra hinanden.</li>
                     <li><span class="markeret-ord">Lukning</span> - Dette er hvis nogle objekter har en
                         ufuldsstændighed, kan vores hjerne stadig sætte
                         dem sammen til en helhed.</li>
+                    <li><span class="markeret-ord">Lighed</span> - Det refererer til den tendens mennesker har til at
+                        gruppere ting sammen der har samme farve, form eller størrelse</li>
+                    <li><span class="markeret-ord">Symmetri</span> - Dette er at vi har en tendens til at opfatte ting
+                        der er symmetriske som mere behagelige. </li>
+                    <li><span class="markeret-ord">Kontinuitet</span> - Vi opfatter ting som sammenhængende, hvis de
+                        for eksempel har ligger på samme
+                        række.</li>
                     <li><span class="markeret-ord">Fælles skæbne</span> - Dette betyder at vi opfatter ting som
                         eksempelvis bevæger sig på samme måde, i
                         samme gruppe.</li>
-                    <li><span class="markeret-ord">Fortsættelse</span> - Vi opfatter ting som sammenhængende, hvis de
-                        for eksempel har ligger på samme
-                        række.</li>
                 </ul>
             </div>
 
@@ -203,7 +218,7 @@
 
         <div class="temafinal">
             <a href="https://smillaaugusta.dk/kea/02_web/01_website/website/index.html">
-                <h2>Klik for at se studiestartsprøven</h2>
+                <h2 class="h2mobil">Klik for at se studiestartsprøven</h2>
                 <img class="tema3pic" src="imgs/02.webp" alt="Studiestartsprøven" width="200" height="100">
             </a>
         </div>
@@ -214,7 +229,7 @@
 
     <footer class="footer_grid">
         <div class="footer_grid_1">
-            <p>© 2023 Smilla A. P. J. Bredgaard. All Rights Reserved.</p>
+            <p>© 2024 Smilla A. P. J. Bredgaard. All Rights Reserved.</p>
         </div>
 
         <div class="footer_grid_2">
@@ -235,6 +250,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 

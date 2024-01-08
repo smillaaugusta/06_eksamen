@@ -21,11 +21,20 @@
 
 <body>
 
-    <header>
-        <nav class="navbar">
+    <header id="active-menu">
+        <div class="inner-header">
             <a class="logo" href="index.html">
                 <img class="logo" src="imgs/weblogo.svg" alt="logo">
             </a>
+            <div class="burger-menu">
+                <div class="menu-icon" id="menu-icon">
+                    <div class="bar bar-1"></div>
+                    <div class="bar bar-2"></div>
+                    <div class="bar bar-3"></div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar active-show">
             <ul class="menu">
                 <li><a href="index.html">Forside</a></li>
                 <li><a href="om_mig.html">Om mig</a></li>
@@ -50,7 +59,6 @@
                     interviewe og filme en person med en passion. Vi valgte at interviewe en fra klassens papfar, hvis
                     passion var at samle på plader. Den næste fase involverede et virksomhedsprojekt, hvor vi i grupper
                     af fire skulle re-designe en eksisterende virksomheds hjemmeside.
-
                 </p>
 
                 <br>
@@ -144,23 +152,39 @@
         <img class="streg" src="imgs/streg1.svg" alt="Billede af streg">
 
 
-        <div class="makerz">
-            <div class="makerz1">
+        <div class="temabilleder">
+            <div class="textvisit">
                 <h3>Virksomhedssite start</h3>
                 <p>Vi skulle i grupper af fire, finde en virksomhed, der både havde en fysisk lokation og en hjemmeside.
                     Vi valgte virksomheden Makerz, som godt kunne trænge til et re-design af deres hjemmeside. Vores
                     design process startede med at besøge virksomheden og have en samtale med dem, for at forstå deres
-                    ønsker til hjemmesiden. Efter samtalen interviewede vi indehaveren, Marius, og tog nogle billeder,
+                    ønsker til hjemmesiden.
+                </p>
+                <br>
+                <p>Efter samtalen interviewede vi indehaveren, Marius, og tog nogle billeder,
                     som vi skulle bruge til hjemmesiden. Derfra udviklede vi et styletile og moodboard både for deres
-                    eksisterende hjemmeside og vores nye design, for at få en idé om det ønskede udtryk.Baseret på dette
+                    eksisterende hjemmeside og vores nye design, for at få en idé om det ønskede udtryk. Baseret på
+                    dette
                     lavede vi i fællesskab en wireframe og prototype, som vi kunne gå efter, når vi skulle kode sitet.
 
                 </p>
 
             </div>
 
-            <div class="makerz2">
-                <img class="marius" src="imgs/m.portrait1.webp" alt="Portræt af Marius">
+            <div class="visitdiv">
+                <img class="tema3pic1" src="imgs/mariusl.webp" alt="Billede af Marius">
+            </div>
+
+            <div class="kodediv">
+                <img class="tema3pic1" src="imgs/moodmakerz.webp" alt="Moodboard for Makerz">
+            </div>
+
+            <div class="visitwebdiv">
+                <img class="tema3pic1" src="imgs/stylemakerz.webp" alt="Style Tile for Makerz">
+            </div>
+
+            <div class="dyrdiv">
+                <img class="tema3pic1" class="marius" src="imgs/sitemapmakerz.webp" alt="Sitemap for Makerz">
             </div>
 
         </div>
@@ -218,42 +242,17 @@
 
         <div class="temafinal">
             <a href="https://smillaaugusta.dk/kea/05_indhold/projekt/index.html">
-                <h2>Klik for at se endelige resultat</h2>
+                <h2 class="h2mobil">Klik for at se Virksomhedssitet</h2>
                 <img class="tema3pic" src="imgs/makerzweb.webp" alt="Endelig resultat">
             </a>
         </div>
-
-        <!-- https://youtu.be/5pYRi4FRzQs?si=iFoZaL53Xxurng4d -->
-
-
-
-        <!-- <div class="temabilleder">
-
-            <div class="tema5div">
-                <h2>Carhartt Klippeopgave</h2>
-                <img class="tema5pic" src="imgs/premierepro.webp" alt="Premiere Pro">
-            </div>
-
-
-            <div class="tema5div">
-                <h2>Videosite</h2>
-                <img class="tema5pic" src="imgs/videosite.webp" alt="Videosite">
-            </div>
-
-            <div class="tema5div">
-                <h2>Makerz Video</h2>
-                <img class="tema5pic" src="imgs/video.webp" alt="Video">
-            </div>
-
-
-        </div> -->
 
 
     </main>
 
     <footer class="footer_grid">
         <div class="footer_grid_1">
-            <p>© 2023 Smilla A. P. J. Bredgaard. All Rights Reserved.</p>
+            <p>© 2024 Smilla A. P. J. Bredgaard. All Rights Reserved.</p>
         </div>
 
         <div class="footer_grid_2">
@@ -274,6 +273,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 

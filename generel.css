@@ -10,26 +10,84 @@ img {
   display: block;
 }
 
+.logo {
+  margin: auto 10px;
+}
+.inner-header {
+  display: flex;
+  margin-right: auto;
+}
+
+.burger-menu {
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
 ul.menu {
   display: flex;
-  gap: 30px;
-  font-size: 17px;
+  flex-direction: column;
+}
+
+.active-show {
+  display: none;
+}
+
+.active-show ul {
   list-style: none;
-  text-transform: uppercase;
+  /* flex-direction: column; */
+  text-align: center;
+  margin: 10px auto;
+  gap: 20px;
+}
+
+.active-show li {
+  margin-bottom: 10px;
+}
+.active-show a {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+}
+
+.menu-icon {
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px 20px;
+}
+
+.bar {
+  width: 35px;
+  height: 3px;
+  background: #000;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.menu-opened .active-show {
+  display: flex !important;
+  position: absolute;
+  background: #edeadd;
+  width: 100%;
+  height: fit-content;
+}
+
+.menu-opened .bar-1 {
+  display: none;
+}
+
+.menu-opened .bar-2 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+  margin-top: 10px;
+}
+
+.menu-opened .bar-3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+  margin-top: 12px;
 }
 
 body {
   background-color: #edeadd;
-}
-
-.navbar {
-  height: 110px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  color: #262524;
-  padding-right: 10%;
 }
 
 h2 {
@@ -86,10 +144,6 @@ h3 {
   padding-left: 10px;
 }
 
-.logoer {
-  width: 30%;
-}
-
 .elementerne {
   width: 15%;
 }
@@ -139,6 +193,8 @@ a:hover {
 .container2 {
   line-height: 5rem;
   color: #344e41;
+  margin-top: 46px;
+  margin-bottom: 51px;
 }
 
 .po {
@@ -168,8 +224,8 @@ h1 {
   background-image: url(imgs/cirkel.webp);
   background-repeat: no-repeat;
   background-position: 6rem;
-  font-size: 2rem;
-  background-size: 4rem;
+  font-size: 1.8rem;
+  background-size: 3rem;
   padding-top: 2%;
   padding-bottom: 1%;
   padding-left: 5%;
@@ -179,11 +235,11 @@ h1 {
   background-image: url(imgs/storcirkel.webp);
   background-repeat: no-repeat;
   background-position: 5rem;
-  background-size: 6rem;
+  background-size: 5rem;
   padding-top: 31px;
   padding-left: 95px;
   padding-bottom: 4%;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .double {
@@ -214,7 +270,6 @@ h1 {
 
 .grid_cv {
   display: grid;
-  padding: 22px;
   border-radius: 10px;
   gap: 2%;
   padding-bottom: 80px;
@@ -257,8 +312,8 @@ h1 {
 .temaer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12%;
-  margin: 60px;
+  gap: 6%;
+  margin: 9px;
 }
 
 .temabox {
@@ -275,10 +330,10 @@ h1 {
   display: grid;
   background: linear-gradient(to right, #a3b18a, #dad7cd);
   border-radius: 70px;
-  padding: 60px;
+  padding: 27px;
   gap: 10%;
   margin-bottom: 76px;
-  padding-bottom: 125px;
+  padding-bottom: 196px;
 }
 
 .tema3pic {
@@ -326,7 +381,8 @@ h1 {
 }
 
 .temafinal {
-  padding: 2rem;
+  padding: 0.5rem;
+  padding-top: 2rem;
 }
 
 footer {
@@ -416,7 +472,7 @@ footer {
 }
 
 .streg {
-  width: 50%;
+  width: 82%;
   margin: 0 auto;
   padding-top: 10rem;
   padding-bottom: 10rem;
@@ -446,11 +502,11 @@ footer {
 .footer_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 .footer_grid_1 {
-  grid-column: 1/2;
+  grid-column: 1/3;
 }
 
 .footer_grid_2 {
@@ -459,9 +515,24 @@ footer {
   grid-column: 3/4;
 }
 
+.p_footer {
+  line-height: 1rem;
+  font-size: 0.7rem;
+}
+
+.logoer {
+  width: 50%;
+  margin-top: 3px;
+  margin-left: 30px;
+}
+
 .temabilleder3 {
   display: grid;
   gap: 2rem;
+}
+
+.temasolu {
+  margin-top: 10%;
 }
 
 .markeret-ord {
@@ -473,20 +544,28 @@ footer {
   margin: 0 auto;
   background: linear-gradient(to right, #a3b18a, #dad7cd);
   border-radius: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
   text-align: center;
   padding-bottom: 40px;
   padding-top: 25px;
-  margin-left: 20%;
-  margin-right: 20%;
 }
 
-.pitch:hover {
-  transform: scale(1.1);
+.h2mobil {
+  font-size: 1.3rem;
+}
+
+.gestaltlove {
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 @media (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .burger-menu {
+    display: none;
+  }
   ul.menu {
     display: flex;
     gap: 73px;
@@ -494,13 +573,63 @@ footer {
     list-style: none;
     padding-right: 60px;
     text-transform: uppercase;
+    flex-direction: row;
+  }
+
+  /* ul.menu {
+    display: flex;
+    gap: 30px;
+    font-size: 17px;
+    list-style: none;
+    text-transform: uppercase;
+  } */
+
+  .navbar {
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: #262524;
+    padding-right: 10%;
   }
 
   .logo {
-    width: 29%;
+    width: 50%;
     padding-left: 10px;
   }
 
+  .footer_grid {
+    margin-top: 10rem;
+  }
+
+  .footer_grid_2 {
+    display: flex;
+    justify-content: space-around;
+    grid-column: 3/4;
+  }
+
+  .p_footer {
+    line-height: 1.58rem;
+    font-size: 1rem;
+  }
+
+  .logoer {
+    width: 30%;
+    margin-top: 3px;
+    margin-left: 30px;
+  }
+
+  .streg {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .h2mobil {
+    font-size: 2rem;
+  }
   .mig_1 {
     align-items: center;
     height: auto;
@@ -520,7 +649,7 @@ footer {
   .container,
   .container2 {
     text-align: center;
-    line-height: 6rem;
+    line-height: 8rem;
     color: #344e41;
   }
 
@@ -627,11 +756,28 @@ footer {
   }
 
   .billedesmilla {
-    text-align: center; /* Just in case the container needs to center the image horizontally */
+    text-align: center;
   }
 
   #smilla2 {
     width: 70%;
+  }
+
+  .pitch {
+    margin: 0 auto;
+    background: linear-gradient(to right, #a3b18a, #dad7cd);
+    border-radius: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 25px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .pitch:hover {
+    transform: scale(1.1);
   }
 
   .temaer {
@@ -640,6 +786,10 @@ footer {
     gap: 7%;
     margin: 74px 250px;
     margin-bottom: 200px;
+  }
+
+  .gestaltlove {
+    margin-top: 20%;
   }
 
   .website {
@@ -660,20 +810,14 @@ footer {
     padding-bottom: 76px;
   }
 
-  .temafinal img:hover {
-    transform: scale(1.05);
-  }
-
   .temafinal {
     padding: 10rem;
   }
 
-  .temabox:hover {
-    transform: scale(1.05);
-  }
-
   .video2:hover,
-  .videoview:hover {
+  .videoview:hover,
+  .temafinal img:hover,
+  .temabox:hover {
     transform: scale(1.05);
   }
 
@@ -700,8 +844,6 @@ footer {
     grid-template-columns: 1fr 1fr;
     background: linear-gradient(to right, #a3b18a, #dad7cd);
     border-radius: 70px;
-    padding-top: 76px;
-    padding-bottom: 76px;
     padding: 60px;
   }
 
@@ -811,80 +953,18 @@ footer {
     padding: 5rem;
   }
 
-  .temabilleder2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 2rem;
-    padding: 5rem;
-  }
-
-  .boksediv {
-    grid-column: 2/4;
-    grid-row: 1/3;
-  }
-
-  .boksepic {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
-  .gridpic {
-    grid-column: 1/2;
-    grid-row: 2/2;
-  }
-
-  .temabilleder3 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 2rem;
-    padding: 5rem;
-  }
-
-  .tematre {
-    grid-column: 1/3;
-    grid-row: 1/3;
-  }
-
-  .temamood {
-    grid-column: 4/5;
-    grid-row: 2/2;
-  }
-
-  .temastory {
-    grid-column: 4/5;
-    grid-row: 1/2;
-  }
-
-  .temastyle {
-    grid-column: 3/4;
-    grid-row: 2/2;
-  }
-
-  .temaresearch {
-    grid-column: 3/4;
-    grid-row: 1/2;
-  }
-
   .temabilleder4 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding: 0 5rem;
     margin: none;
   }
 
   .tematekst1 {
     grid-column: 2/2;
     grid-row: 1/3;
-  }
-
-  .temasolu {
-    grid-column: 1/2;
-    grid-row: 1/2;
   }
 
   .videosite {
