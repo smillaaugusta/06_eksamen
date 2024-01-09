@@ -35,7 +35,6 @@ ul.menu {
 
 .active-show ul {
   list-style: none;
-  /* flex-direction: column; */
   text-align: center;
   margin: 10px auto;
   gap: 20px;
@@ -94,7 +93,6 @@ h2 {
   font-weight: lighter;
   font-size: 2.5rem;
   text-align: center;
-  /* padding-top: 5rem; */
 }
 
 h3 {
@@ -103,13 +101,15 @@ h3 {
 
 h4 {
   font-style: italic;
-  font-weight: lighter;
+  text-align: center;
 }
 
 p,
 ul {
   font-family: "Noto Serif SC", serif;
   line-height: 1.58rem;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 h2,
@@ -162,10 +162,6 @@ a {
   color: #262524;
 }
 
-a:hover {
-  color: #a3b18a;
-}
-
 .mig_1 {
   height: auto;
   width: 50%;
@@ -186,15 +182,14 @@ a:hover {
 
 .main_container,
 .main_container2 {
-  flex: 1; /* Deler pladsen lige mellem de to containers */
+  flex: 1;
 }
 
 .container,
 .container2 {
   line-height: 5rem;
   color: #344e41;
-  margin-top: 46px;
-  margin-bottom: 51px;
+  margin: 46px 0 51px 0;
 }
 
 .po {
@@ -226,9 +221,7 @@ h1 {
   background-position: 6rem;
   font-size: 1.8rem;
   background-size: 3rem;
-  padding-top: 2%;
-  padding-bottom: 1%;
-  padding-left: 5%;
+  padding: 2% 5% 1% 0;
 }
 
 .stor_cirkel {
@@ -236,9 +229,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: 5rem;
   background-size: 5rem;
-  padding-top: 31px;
-  padding-left: 95px;
-  padding-bottom: 4%;
+  padding: 31px 0 4% 95px;
   font-size: 1.8rem;
 }
 
@@ -246,38 +237,33 @@ h1 {
   background-image: url(imgs/double.webp);
   background-repeat: no-repeat;
   background-position: 5rem;
-  padding-top: 52px;
-  padding-bottom: 65px;
+  padding: 52px 0 65px 0;
 }
 
 .double2 {
   background-image: url(imgs/double.webp);
   background-repeat: no-repeat;
   background-position: 5rem;
-  padding-top: 53px;
-  padding-bottom: 44px;
-  padding-left: 4rem;
+  padding: 53px 0 44px 4rem;
 }
 
 .lille_cirkel2 {
   background-image: url(imgs/cirkel.webp);
   background-repeat: no-repeat;
   background-position: 5rem;
-  padding-bottom: 10px;
+  padding: 5% 0 10px 0;
   font-size: 6rem;
-  padding-top: 5%;
 }
 
 .grid_cv {
   display: grid;
   border-radius: 10px;
   gap: 2%;
-  padding-bottom: 80px;
-  padding-top: 0px;
+  padding: 0 0 80px 0;
 }
 
 .mainmobil {
-  margin: 58px;
+  padding: 20px;
 }
 
 .job,
@@ -287,11 +273,8 @@ h1 {
   margin: 0 auto;
   background: linear-gradient(to right, #a3b18a, #dad7cd);
   border-radius: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
   text-align: center;
-  padding-bottom: 40px;
-  padding-top: 25px;
+  padding: 25px 20px 40px 20px;
   box-shadow: 9px 8px 17px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -302,11 +285,11 @@ h1 {
 #smilla {
   width: 80%;
   border-radius: 8%;
+  margin: 0 auto;
 }
 
 .ommig {
-  padding-top: 5%;
-  padding-bottom: 15%;
+  padding: 5% 0 15% 0;
 }
 
 .temaer {
@@ -321,8 +304,7 @@ h1 {
   background: linear-gradient(to right, #a3b18a, #dad7cd);
   border-radius: 50px;
   text-align: center;
-  padding-top: 76px;
-  padding-bottom: 76px;
+  padding: 76px 0;
   box-shadow: 9px 8px 17px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -369,14 +351,13 @@ h1 {
 
 .temabilleder {
   display: grid;
-  padding-bottom: 15rem;
-  padding-top: 5rem;
+  padding: 5rem 0 9rem 0;
+
   gap: 2%;
 }
 .temabilleder2 {
   display: grid;
-  padding-bottom: 12rem;
-  padding-top: 5rem;
+  padding: 5rem 0 12rem 0;
   gap: 2%;
 }
 
@@ -388,16 +369,6 @@ h1 {
 footer {
   background-color: #dad7cd;
   padding: 23px;
-}
-
-.tilbagepil {
-  top: 10px;
-  left: 20px;
-  color: #333;
-}
-
-.tilbage {
-  width: 5%;
 }
 
 .ul_liste {
@@ -466,16 +437,13 @@ footer {
   padding-top: 0;
 }
 
-.martin1 {
-  border-radius: 10%;
-  box-shadow: 9px 8px 17px 0px rgba(0, 0, 0, 0.75);
+.left {
+  text-align: left;
 }
-
 .streg {
   width: 82%;
   margin: 0 auto;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding: 10rem 0;
 }
 
 .videoer {
@@ -487,15 +455,13 @@ footer {
 
 .makerz {
   display: grid;
-  padding-top: 1rem;
-  padding-bottom: 20rem;
+  padding: 1rem 0 20rem 0;
   gap: 5%;
 }
 
 .videosite {
   display: grid;
-  padding-top: 5%;
-  padding-bottom: 5rem;
+  padding: 5% 0 5rem 0;
   gap: 5%;
 }
 
@@ -522,8 +488,7 @@ footer {
 
 .logoer {
   width: 50%;
-  margin-top: 3px;
-  margin-left: 30px;
+  margin: 3px 0 0 30px;
 }
 
 .temabilleder3 {
@@ -536,7 +501,6 @@ footer {
 }
 
 .markeret-ord {
-  font-weight: bolder;
   text-decoration: underline;
 }
 
@@ -545,8 +509,7 @@ footer {
   background: linear-gradient(to right, #a3b18a, #dad7cd);
   border-radius: 50px;
   text-align: center;
-  padding-bottom: 40px;
-  padding-top: 25px;
+  padding: 25px 0 40px 0;
 }
 
 .h2mobil {
@@ -554,8 +517,7 @@ footer {
 }
 
 .gestaltlove {
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin: 10% 0;
 }
 
 @media (min-width: 800px) {
@@ -575,14 +537,6 @@ footer {
     text-transform: uppercase;
     flex-direction: row;
   }
-
-  /* ul.menu {
-    display: flex;
-    gap: 30px;
-    font-size: 17px;
-    list-style: none;
-    text-transform: uppercase;
-  } */
 
   .navbar {
     height: 110px;
@@ -616,15 +570,17 @@ footer {
 
   .logoer {
     width: 30%;
-    margin-top: 3px;
-    margin-left: 30px;
+    margin: 3px 0 0 30px;
+  }
+
+  a:hover {
+    color: #a3b18a;
   }
 
   .streg {
     width: 50%;
     margin: 0 auto;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding: 10rem 0;
   }
 
   .h2mobil {
@@ -643,7 +599,7 @@ footer {
 
   .main_container,
   .main_container2 {
-    flex: 1; /* Deler pladsen lige mellem de to containers */
+    flex: 1;
   }
 
   .container,
@@ -697,13 +653,10 @@ footer {
   .grid_cv {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 40px;
     border-radius: 10px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 0 10%;
     gap: 4%;
-    padding-bottom: 80px;
-    padding-top: 0px;
+    padding: 0 40px 80px 40px;
   }
 
   .lille_cirkel2 {
@@ -717,17 +670,18 @@ footer {
   .lille_cirkel {
     background-image: url(imgs/cirkel.webp);
     background-repeat: no-repeat;
-    background-position: 8rem;
+    background-position: 7rem;
+    font-size: 2.5rem;
   }
 
   .stor_cirkel {
     background-image: url(imgs/storcirkel.webp);
     background-repeat: no-repeat;
-    background-position: 10rem;
+    background-position: 7rem;
     background-size: 8rem;
-    padding-top: 31px;
-    padding-left: 95px;
-    padding-bottom: 4%;
+    padding: 31px 0 53px 150px;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
   }
 
   .job,
@@ -737,11 +691,8 @@ footer {
     margin: 0 auto;
     background: linear-gradient(to right, #a3b18a, #dad7cd);
     border-radius: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 25px 20px 40px 20px;
     text-align: center;
-    padding-bottom: 40px;
-    padding-top: 25px;
   }
 
   .cv {
@@ -767,13 +718,9 @@ footer {
     margin: 0 auto;
     background: linear-gradient(to right, #a3b18a, #dad7cd);
     border-radius: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 25px 50px 40px 50px;
     text-align: center;
-    padding-bottom: 40px;
-    padding-top: 25px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 0 20%;
   }
 
   .pitch:hover {
@@ -806,8 +753,7 @@ footer {
     background: linear-gradient(to right, #a3b18a, #dad7cd);
     border-radius: 70px;
     text-align: center;
-    padding-top: 76px;
-    padding-bottom: 76px;
+    padding: 76px 0;
   }
 
   .temafinal {
@@ -832,11 +778,11 @@ footer {
     width: 87%;
   }
 
-  .lightpic {
-    width: 100%;
+  .grid_pic {
     margin: 0 auto;
-    border-radius: 4%;
+    border-radius: 5%;
     box-shadow: 9px 8px 17px 0px rgba(0, 0, 0, 0.75);
+    margin-bottom: 10px;
   }
 
   .grid_tema2 {
@@ -878,8 +824,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 7%;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding: 0 10rem 10rem 10rem;
   }
 
   .temaproto {
@@ -971,7 +916,8 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 5%;
-    gap: 5%;
+    gap: 3%;
+    margin: 25px;
   }
 
   .videoer {
@@ -979,14 +925,5 @@ footer {
     grid-template-columns: 1fr 1fr;
     padding: 100px 200px;
     gap: 3rem;
-  }
-
-  .makerz {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 10rem;
-    gap: 5%;
-    padding-bottom: 15rem;
-    padding: 10rem;
   }
 }
