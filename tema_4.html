@@ -56,8 +56,8 @@
 
                 <br>
                 <p>I dette tema blev vi præsenteret for programmeringssproget JavaScript. Vi lærte, hvordan man gør en
-                    hjemmeside mere dynamisk, hvilket vi skulle kombinere med CSS-animationer. Vi måtte selv bestemme
-                    hvordan det skulle se ud og hvad det skulle handle om, men der var nogle krav for at gøre det så
+                    hjemmeside mere dynamisk, hvilket vi skulle kombinere med CSS-animationer. Vi måtte selv bestemme,
+                    hvordan det skulle se ud, og hvad det skulle handle om, men der var nogle krav for at gøre det så
                     simpelt for os som muligt.
 
                 </p>
@@ -67,8 +67,6 @@
                     spilelementerne. Ved at bruge Adobe Audition lærte vi også at optage vores egne lyde og
                     efterfølgende redigere dem. Dette gjorde, at vi ikke behøvede at finde lyde og selv kunne
                     personliggøre lydene.
-
-
                 </p>
             </div>
 
@@ -111,7 +109,7 @@
             <div class="skitse">
                 <h3>Idegenerering, skitsering og stil</h3>
                 <p>Først skulle vi generere ideer og beslutte, hvad vores spil skulle handle om. Vi lavede en idéøvelse,
-                    hvor vi skulle komme med 5 tilfældige ideer og 5 ideer jeg selv valgte. Efter denne øvelse valgte
+                    hvor vi skulle komme med 5 tilfældige ideer og 5 ideer jeg selv valgte. Efter denne øvelse, valgte
                     jeg at udvikle et spil om Brøndby IF og FCK. Herefter skulle jeg vælge en bestemt stilart, som jeg
                     ville anvende konsekvent i mit spil. Jeg valgte den japanske Kawaii-stil, der kendetegnes ved søde
                     og nuttede væsner med store øjne samt typisk bløde former og kanter.
@@ -119,15 +117,17 @@
                 </p>
                 <br>
                 <p>
-                    Jeg skulle skitsere ideen ved hånden ved at tegne spilelementerne og baggrunden. Baseret på dette
+                    Jeg skulle skitsere ideen i hånden ved at tegne spilelementerne og baggrunden. Baseret på dette
                     udviklede jeg en Paper Prototype og lavede en video dertil, der forklarede, hvordan mit spil skulle
-                    forløbe.
+                    forløbe. Paper prototype er en hurtig prototype lavet af papir, hvor man tester konceptet for
+                    interaktion og indhold, og ikke designet. Dette giver mig vigtigt feedback og
+                    får mig til at opdage eventuelle fejl tidligt i processen.
                 </p>
                 <br>
                 <p>
                     Efterfølgende gik jeg i gang med at skitsere disse elementer i Adobe Illustrator med min valgte
-                    Kawaii-stil. Dette gav mig kendskab med programmet og hjalp mig med at definere det visuelle udtryk.
-                    Jeg skitserede både mine elementer, knapper og baggrunde.
+                    Kawaii-stil. Dette gav mig kendskab til programmet og hjalp mig med at definere det visuelle udtryk.
+                    Jeg skitserede både mine elementer, knapper og baggrunde i Illustrator.
 
                 </p>
             </div>
@@ -156,7 +156,7 @@
 
             <div class="tema4_pa">
                 <h3>04.04.01 - Aktivitetsdiagram og State Machine Diagram</h3>
-                <h4 class="left">Aktivitatesdiagram</h4>
+                <h4 class="left">Aktivitetsdiagram</h4>
                 <p>Efter jeg havde færdigtegnet mine elementer i Illustrator, gik jeg videre til at lave et
                     Aktivitetsdiagram og et State Machine Diagram for at skabe et overblik over, hvordan mit spil skulle
                     forløbe.
@@ -170,11 +170,13 @@
                 </p>
                 <br>
                 <p>
-                    Man kan se hvad der sker, hvilke lyde og hvilke animationer der kommer når man klikker på et logo. I
+                    Man kan se, hvad der sker, hvilke lyde og hvilke animationer, der kommer når man klikker på et
+                    logo. I
                     mit spil, kan man se, at når man eksempelvis klikker på FCK logoerne der falder ned, kommer der en
-                    positiv "yeah" lyd, det forsvinder, og man 1 point. Omvendt kommer der en negativ "bræk" lyd og
+                    positiv "yeah" lyd, det forsvinder, og man får 1 point. Omvendt, hvis man klikker på et BIF logo,
+                    kommer der en negativ "bræk" lyd og
                     logoet forsvinder, og man mister 1 liv. Til højre kan man se at spillet har en varighed på 30
-                    sekunder, og hvis man ikke opnår at få 10 point, taber man.
+                    sekunder, og hvis man ikke opnår 10 point, taber man.
 
                 </p>
             </div>
@@ -206,15 +208,15 @@
                     "document.querySelector" er at jeg i starten har oprettet en const: "const bif_container =
                     document.querySelector("#bif_container");
                     "" ", så jeg ikke behøvede at skrive det hver gang, men i stedet bare kan skrive "bif_container".
-                    Man kan se at "bif_container.classList.add("fald");"" for tilføjet css-klassen "fald", som jeg var
-                    bestemt hvordan skulle være
+                    Man kan se at "bif_container.classList.add("fald");"" får tilføjet css-klassen "fald", som jeg har
+                    bestemt, hvordan skulle være
                     ved hjælp af css. Ved "fck_container.addEventListener("click", clickFck);" og
-                    "bif_container.addEventListener("click", clickBif);", kan man se at der bliver
-                    tilføjet en eventlistener, så når der bliver klikket på den, udføres funktionen "clickfck", som
+                    "bif_container.addEventListener("click", clickBif);", kan man se, at der bliver
+                    tilføjet en eventlistener, så når der bliver klikket på den, udføres funktionen "clickFck", som
                     defineres på andet billede til højre. Det næste der sker ved
                     "fck_container.addEventListener("animationiteration", genstartFck);" og
                     "bif_container.addEventListener("animationiteration", genstartBif);" er at der kommer en
-                    eventlistener der lytter efter afslutningen af animationiteration, og når den gentages bliver den
+                    eventlistener, der lytter efter afslutningen af animationiteration, og når den gentages bliver den
                     kaldt for "genstartFck" og "genstartBif".
                 </p>
             </div>
@@ -232,18 +234,13 @@
 
             <div class="statetext">
                 <h3>Css(Keyframes)</h3>
-                <p>På billedet til venstre kan man se min css for den animation, jeg har brugt i min JavaScript. Jeg
-                    har
-                    lavet en animation der hedder "fald_kf". "Animation-duration" definerervarigheden af animationen
-                    -
-                    jeg har valgt 3 sekunder. "Animation-iteration-count", er sat til "infinite",
-                    hvilket betyder at animation vil gentages uendeligt. Så når de tre sekunder er gået, vil den
-                    gentage
-                    sig. "Animation-timing-function", som jeg har valgt skal være "linear", betyder at animation er
-                    linær, og bevægelsen er stabil. "Animation-fill-mode" har jeg sat til at være "both", som
-                    bestemmer
-                    at animationen bliver ved
-                    den sidste frame af animationen fastholdt, både før og efter. </p>
+                <p>På billedet til venstre, kan man se min css for den animation, jeg har brugt i mit JavaScript
+                    eksempel. Jeg har lavet en animation, der hedder "fald_kf". "Animation-duration" definerer
+                    varigheden af animationen - jeg har valgt 3 sekunder. "Animation-iteration-count", er sat til
+                    "infinite", hvilket betyder at animation vil gentages uendeligt. Så når de tre sekunder er gået, vil
+                    den gentage sig. "Animation-timing-function", som jeg har valgt skal være "linear", betyder at
+                    animation er linær, og bevægelsen er stabil. Jeg har sat 'animation-fill-mode' til at være 'both',
+                    hvilket betyder, at animationen fastholdes ved den sidste frame både før og efter. </p>
                 <br>
                 <p>Efterfølgende ses min keyframe "fald_kf", hvor min første frame "0%" har en transform der flytter
                     opad, uden rotation. Men min sidste frame "100%", der har en transform der flytter nedad og
