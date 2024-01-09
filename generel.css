@@ -904,7 +904,7 @@ footer {
     grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
     padding: 0 5rem;
-    margin: none;
+    margin: 0;
   }
 
   .tematekst1 {
