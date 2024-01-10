@@ -324,6 +324,13 @@ h1 {
   width: 100%;
 }
 
+.grid_pic {
+  margin: 0 auto;
+  border-radius: 5%;
+  box-shadow: 9px 8px 17px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 10px;
+}
+
 .tema4pic {
   margin: 0 auto;
   border-radius: 5%;
@@ -378,8 +385,8 @@ footer {
 
 .video2 {
   background-image: url(imgs/blur.webp);
-  width: 100%;
-  padding: 100px;
+  width: 93%;
+  padding: 67px;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 15%;
@@ -387,7 +394,6 @@ footer {
   box-shadow: 9px 8px 17px 0px rgba(0, 0, 0, 0.75);
   background-position: center;
   border-radius: 50px;
-  display: flex;
 }
 
 .video2 a {
@@ -401,8 +407,8 @@ footer {
 
 .videoview {
   background-image: url(imgs/blur22.webp);
-  width: 100%;
-  padding: 100px;
+  width: 93%;
+  padding: 67px;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 15%;
@@ -410,7 +416,6 @@ footer {
   box-shadow: 9px 8px 17px 0px rgba(0, 0, 0, 0.75);
   background-position: center;
   border-radius: 50px;
-  display: flex;
 }
 
 .videoview a {
@@ -744,6 +749,34 @@ footer {
     transform: scale(1.05);
   }
 
+  .videoview {
+    background-image: url(imgs/blur22.webp);
+    width: 100%;
+    padding: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15%;
+    height: 100%;
+    box-shadow: 9px 8px 17px 0px rgba(0, 0, 0, 0.75);
+    background-position: center;
+    border-radius: 50px;
+    display: flex;
+  }
+
+  .video2 {
+    background-image: url(imgs/blur.webp);
+    width: 100%;
+    padding: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15%;
+    height: 100%;
+    box-shadow: 9px 8px 17px 0px rgba(0, 0, 0, 0.75);
+    background-position: center;
+    border-radius: 50px;
+    display: flex;
+  }
+
   .process {
     padding-bottom: 3rem;
   }
@@ -753,13 +786,6 @@ footer {
     border-radius: 4%;
     box-shadow: 9px 8px 17px 0px rgba(0, 0, 0, 0.75);
     width: 87%;
-  }
-
-  .grid_pic {
-    margin: 0 auto;
-    border-radius: 5%;
-    box-shadow: 9px 8px 17px 0px rgba(0, 0, 0, 0.75);
-    margin-bottom: 10px;
   }
 
   .grid_tema2 {
